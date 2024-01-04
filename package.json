@@ -14,10 +14,14 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
+    "apexcharts": "^3.45.1",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
     "vue": "^2.7.10",
+    "vue-apexcharts": "^1.6.2",
+    "vue-d3-charts": "^0.2.8",
     "vue-server-renderer": "^2.7.10",
+    "vue-speedometer": "^1.0.1",
     "vue-template-compiler": "^2.7.10",
     "vuetify": "^2.6.10"
   },

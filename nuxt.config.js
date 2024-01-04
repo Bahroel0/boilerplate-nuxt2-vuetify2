@@ -26,6 +26,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~plugins/vue-speedometer', ssr: false },
+    { src: '~plugins/vue-apexchart', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -81,5 +83,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    vendor: ['vue-speedometer'],
+    extend (config, ctx) {
+      config.resolve.alias.vue = 'vue/dist/vue.common'
+    }
   }
 }
